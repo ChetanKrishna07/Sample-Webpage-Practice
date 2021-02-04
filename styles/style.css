@@ -1,111 +1,180 @@
-html, body {
-    margin: 0px;
-    padding: 0px;
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  
 }
 
 body {
-    padding: 0 auto;
+  padding: 0 auto;
+  background-color: rgb(241, 240, 240);
 }
 
-nav {
-    display: flex;
-    background-color: #1f1f1f;
-    height: 43px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
+
+nav,
+.language-header {
+  display: flex;
+  background-color: #1f1f1f;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  margin: 0px;
 }
 
-nav ul {
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-    flex: 2;
-    color: white;
+nav ul,
+.language-header ul {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex: 2;
+  color: white;
 }
 
-nav li {
-    display: inline;
-    flex: 1;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Fira Sans',sans-serif;
-    font-weight: 600;;
-    font-size: 14px;
+nav li,
+.language-header li {
+  display: inline;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-li:hover {
-    background-color: #ffffff;
-    color: black;
+nav li:hover {
+  border-bottom: 4px solid red;
 }
+
+.language-header li:hover {
+    border-top: 8px solid red;
+  }
 
 h1 {
-    color: #000;
-    font-size: 45px;
-    font-weight: 700px;
-    font-family: 'Droid Serif',serif;
-    padding: 10px 0;
-    line-height: 50px;
-    margin: 0px;
+  color: #000;
+  font-size: 45px;
+  font-weight: 700px;
+  font-family: "Droid Serif", serif;
+  padding: 10px 0;
+  line-height: 50px;
+  margin: 0px;
 }
 
 h2 {
-    color: #6b6b6b;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    padding: 0 0 10px;
-    margin: 0px;
-    border-bottom: 1px solid #dbdbdb;
+  color: #6b6b6b;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 0 10px;
+  margin: 0px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 figcaption {
-    border-bottom: 1px solid #dbdbdb;
-    color: #747474;
-    display: block;
-    font-family: Roboto,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    margin: 0 0 20px;
-    overflow: hidden;
-    padding: 0 0 5px;
+  border-bottom: 1px solid #dbdbdb;
+  color: #747474;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  padding: 0 0 5px;
 }
 
 main {
-   display: block;
-   align-items: center;
-   padding: 10px;
+  display: block;
+  padding: 15px;
+  padding-right: 162px;
+  padding-left: 162px;
+  margin: auto;
+  width: 50%;
+  
 }
 
 main p {
-    color: #3e3e3e;
-    font-family: 'Droid Serif',serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    padding: 0 0 20px;
-    
+  color: #3e3e3e;
+  font-family: "Droid Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 0 20px;
 }
 
 figure {
-    display: block;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+  display: block;
+  margin: auto;
 }
 
 figure img {
-    width: 70%;
+  width: 70%;
 }
 
 header {
-    width: 70%;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
 }
 
-main {
-    width: 70%;
+.language-header {
+  background-color: #dad8d9;
+  height: 32px;
 }
+
+.language-header ul {
+  justify-content: center;
+  align-items: center;
+}
+
+.language-header li {
+  color: black;
+  font-size: 13px;
+  flex: 0;
+  padding: 10px;
+}
+
+.title1 {
+    display: block;
+    padding: 15px;
+    padding-right: 162px;
+    padding-left: 162px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    height: 84.7;
+ 
+}
+
+.title1 > div {
+    color: #000;
+    font-size: 13px;
+    font-family: 'Fira Sans',sans-serif;
+    font-weight: 600; 
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 0, 0);
+    margin: 0px;
+    height: 52px;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header div p {
+    
+    border-right: 1px solid rgb(173, 173, 173);
+    padding-right: 10px;
+}
+
+header div marquee {
+    font-weight: normal;
+}
+
